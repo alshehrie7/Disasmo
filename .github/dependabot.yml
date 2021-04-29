@@ -1,0 +1,38 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "03:00"
+    timezone: Asia/Riyadh
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Microsoft.Diagnostics.Runtime
+    versions:
+    - 2.0.161401
+    - 2.0.217201
+    - 2.0.221201
+  - dependency-name: Microsoft.VSSDK.BuildTools
+    versions:
+    - 16.10.23
+    - 16.10.7
+    - 16.9.1014
+    - 16.9.1050
+    - 16.9.2016
+  - dependency-name: AvalonEdit
+    versions:
+    - 6.0.1
+    - 6.1.0
+  - dependency-name: Microsoft.CodeAnalysis.CSharp.Workspaces
+    versions:
+    - 3.8.0
+  - dependency-name: Microsoft.CodeAnalysis.EditorFeatures.Text
+    versions:
+    - 3.8.0
+  - dependency-name: Microsoft.VisualStudio.LanguageServices
+    versions:
+    - 3.8.0
+  - dependency-name: Microsoft.VisualStudio.SDK
+    versions:
+    - 16.0.202
